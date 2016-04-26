@@ -1,6 +1,6 @@
 # AutolayoutAndFramelayout
 ##关于调用次序
-'''
+
 ViewController:viewDidLoad
 ViewController:viewWillAppear
 subview:updateConstraints
@@ -16,7 +16,7 @@ ViewController:viewWillLayoutSubviews
 ViewController:viewDidLayoutSubviews
 ViewController:viewWillLayoutSubviews
 ViewController:viewDidLayoutSubviews
-'''  
+
 结论：  
 1, viewDidAppear时，布局才完成。  
 2, 可以在viewDidAppear后用setFrame进行调整；但是不稳定，比方屏幕旋转导致重新进行布局计算。  
