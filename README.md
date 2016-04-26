@@ -25,3 +25,6 @@ ViewController:viewDidLayoutSubviews
 5, 用initwithframe创建的视图是不带约束的；  
 6, 可以创建一个xib，禁止autolayout。然后将该视图添加到一个自动布局视图中。达到混用两种布局的效果。  
 7, setFrame不会导致重新布局计算，你可以调用setNeedsLayout，强制进行重新布局计算。  
+
+问题：
+1, autolyaout 是否支持initwithframe:支持；相当于手动创建视图，添加到一个自动布局视图中。
